@@ -2,11 +2,11 @@ import time
 import numpy as np
 import matplotlib.pyplot as plt
 from typing import Dict, Any, List
-from bonding_curve.src.config import INITIAL_TOKEN_SUPPLY, NUM_AGENTS, SIMULATION_STEPS, BONDING_CURVE_TYPE
-from bonding_curve.src.bonding_curves import calculate_bonding_curve_price
-from bonding_curve.src.agent import Agent
-from bonding_curve.src.simulation import simulation_step
-from bonding_curve.src.optimization import optimize_bonding_curve
+from config import INITIAL_TOKEN_SUPPLY, NUM_AGENTS, SIMULATION_STEPS, BONDING_CURVE_TYPE
+from bonding_curves import calculate_bonding_curve_price
+from agent import Agent
+from simulation import simulation_step
+from optimization import optimize_bonding_curve
 
 def main():
     """
@@ -21,7 +21,7 @@ def main():
     print(f"\nSimulating with optimal parameters for {OPTIMIZE_CURVE_TYPE}: {optimal_params}")
 
     # Initialize simulation's global state
-    from bonding_curve.src.simulation import global_state
+    from simulation import global_state
     supply: float = INITIAL_TOKEN_SUPPLY
     agents: List[Agent] = [Agent(i) for i in range(NUM_AGENTS)]
 

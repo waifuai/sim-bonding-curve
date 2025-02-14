@@ -1,10 +1,10 @@
 import pytest
 import numpy as np
-from bonding_curve.src.optimization import evaluate_parameters, optimize_bonding_curve
-from bonding_curve.src.config import INITIAL_TOKEN_SUPPLY, NUM_AGENTS
-from bonding_curve.src.simulation import simulation_step, SimulationState
-from bonding_curve.src.agent import Agent
-from bonding_curve.src.bonding_curves import calculate_bonding_curve_price
+from optimization import evaluate_parameters, optimize_bonding_curve
+from config import INITIAL_TOKEN_SUPPLY, NUM_AGENTS
+from simulation import simulation_step, SimulationState
+from agent import Agent
+from bonding_curves import calculate_bonding_curve_price
 
 def test_evaluate_parameters_linear():
     """

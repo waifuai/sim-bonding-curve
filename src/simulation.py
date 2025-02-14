@@ -1,9 +1,9 @@
 import numpy as np
 from typing import List, Tuple, Dict, Any
 
-from bonding_curve.src.config import INITIAL_TOKEN_SUPPLY, NUM_AGENTS, TRADING_FEE
-from bonding_curve.src.bonding_curves import calculate_bonding_curve_price
-from bonding_curve.src.agent import Agent
+from config import INITIAL_TOKEN_SUPPLY, NUM_AGENTS, TRADING_FEE
+from bonding_curves import calculate_bonding_curve_price
+from agent import Agent
 
 # --- Simulation State Class ---
 class SimulationState:

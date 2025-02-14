@@ -1,9 +1,9 @@
 import pytest
 import numpy as np
-from bonding_curve.src.simulation import simulation_step, SimulationState
-from bonding_curve.src.agent import Agent
-from bonding_curve.src.config import INITIAL_TOKEN_SUPPLY, NUM_AGENTS, TRADING_FEE
-from bonding_curve.src.bonding_curves import calculate_bonding_curve_price, linear_bonding_curve, exponential_bonding_curve, sigmoid_bonding_curve, multi_segment_bonding_curve
+from simulation import simulation_step, SimulationState
+from agent import Agent
+from config import INITIAL_TOKEN_SUPPLY, NUM_AGENTS, TRADING_FEE
+from bonding_curves import calculate_bonding_curve_price, linear_bonding_curve, exponential_bonding_curve, sigmoid_bonding_curve, multi_segment_bonding_curve
 
 # --- Integration Tests ---
 def test_simulation_step_basic_interaction():

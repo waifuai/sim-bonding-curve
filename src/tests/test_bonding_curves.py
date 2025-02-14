@@ -1,7 +1,7 @@
 import pytest
 import numpy as np
-from bonding_curve.src.bonding_curves import calculate_bonding_curve_price
-from bonding_curve.src.config import INITIAL_TOKEN_SUPPLY
+from bonding_curves import calculate_bonding_curve_price
+from config import INITIAL_TOKEN_SUPPLY
 
 def test_linear_curve():
     params = {'type': 'linear', 'm': 0.1, 'b': 1.0}
