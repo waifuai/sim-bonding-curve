@@ -1,3 +1,14 @@
+"""
+Main module for the Token Economy Simulation with Bonding Curves.
+
+This module serves as the main entry point for running the bonding curve simulation.
+It provides command-line interface for configuring simulation parameters, runs the
+optimization process to find optimal bonding curve parameters, executes the simulation,
+and generates comprehensive visualizations of the results. The module coordinates
+all other components of the system and provides a complete end-to-end simulation
+experience with detailed logging and output analysis.
+"""
+
 import time
 import argparse
 import numpy as np

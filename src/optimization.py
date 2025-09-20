@@ -1,3 +1,14 @@
+"""
+Optimization module for the Token Economy Simulation with Bonding Curves.
+
+This module provides parameter optimization functionality for finding optimal bonding
+curve parameters that minimize price volatility while maintaining healthy market
+activity. It uses random search with comprehensive evaluation metrics to test multiple
+parameter combinations across multiple simulation runs. The module includes functions
+for parameter evaluation, random parameter generation, and optimization with detailed
+progress reporting and result analysis.
+"""
+
 import random
 import numpy as np
 from typing import Dict, Any, List, Callable

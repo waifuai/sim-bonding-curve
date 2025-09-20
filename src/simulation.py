@@ -1,3 +1,13 @@
+"""
+Simulation module for the Token Economy Simulation with Bonding Curves.
+
+This module provides the core simulation infrastructure for running the token economy
+simulation. It includes the simulation state management, trade processing engine,
+and step-by-step simulation execution. The module handles agent interactions with
+the bonding curve, manages global simulation state, processes trades with proper
+fee calculations, and provides comprehensive metrics for each simulation step.
+"""
+
 import numpy as np
 from typing import List, Dict, Any, Optional
 from dataclasses import dataclass, field

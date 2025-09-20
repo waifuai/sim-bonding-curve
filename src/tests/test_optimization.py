@@ -1,3 +1,13 @@
+"""
+Test suite for optimization functionality.
+
+This module contains tests for the parameter optimization system, including
+parameter evaluation, random parameter generation, and optimization algorithms.
+The tests verify that the optimization process correctly finds optimal bonding
+curve parameters, evaluates parameter performance across multiple simulation
+runs, and handles edge cases and error conditions properly.
+"""
+
 import pytest
 import numpy as np
 from optimization import evaluate_parameters, optimize_bonding_curve

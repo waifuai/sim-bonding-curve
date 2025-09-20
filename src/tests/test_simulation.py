@@ -1,3 +1,13 @@
+"""
+Test suite for simulation functionality.
+
+This module contains comprehensive tests for the simulation engine, including
+integration tests for the complete simulation workflow and unit tests for
+individual simulation components. The tests verify proper interaction between
+agents, bonding curves, and the simulation state management, ensuring that
+all components work together correctly across different scenarios and edge cases.
+"""
+
 import pytest
 import numpy as np
 from simulation import simulation_step, SimulationState

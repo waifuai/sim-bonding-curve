@@ -1,3 +1,12 @@
+"""
+Test suite for bonding curve functionality.
+
+This module contains comprehensive tests for all bonding curve implementations,
+including linear, exponential, sigmoid, and multi-segment curves. The tests verify
+correct price calculations, parameter validation, error handling, and numerical
+stability across different supply levels and parameter combinations.
+"""
+
 import pytest
 import numpy as np
 from bonding_curves import calculate_bonding_curve_price

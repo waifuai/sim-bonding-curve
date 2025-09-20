@@ -1,3 +1,13 @@
+"""
+Bonding Curves module for the Token Economy Simulation.
+
+This module implements various mathematical bonding curve models used to calculate token
+prices based on supply. It includes linear, exponential, sigmoid, and multi-segment
+bonding curves with comprehensive validation and error handling. The module provides
+a unified interface for price calculation and supports parameter validation for each
+curve type to ensure numerical stability and prevent invalid calculations.
+"""
+
 import numpy as np
 from typing import Dict, Any, List, Callable, Union
 import logging

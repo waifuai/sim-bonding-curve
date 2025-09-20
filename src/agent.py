@@ -1,3 +1,13 @@
+"""
+Agent module for the Token Economy Simulation with Bonding Curves.
+
+This module implements autonomous trading agents that participate in the bonding curve
+simulation. Each agent uses sophisticated trading strategies including momentum trading,
+mean reversion, and random exploration to make trading decisions based on market conditions.
+The agents track price history, maintain capital and token balances, and execute trades
+while considering transaction fees and risk management.
+"""
+
 import numpy as np
 import random
 from typing import Tuple, Optional, Dict, Any, List
